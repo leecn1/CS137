@@ -1,0 +1,25 @@
+body{
+  background-image: url(../img/2.jpg);
+  height: 100%;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+text-align: center;
+margin-top: 100px;
+margin-left: 275px;
+color: white;
+}
+
+a{
+  color: white;
+}
+
+table{
+  margin-left: 120px;
+  margin-right: 150px;
+}
+
+.links{
+  text-align: center;
+}
