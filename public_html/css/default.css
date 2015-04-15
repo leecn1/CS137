@@ -1,0 +1,193 @@
+/* default.css for the expanded Nature's Source web site */
+
+/* ===== global settings ===== */
+
+body{
+  background-image: url(../img/2.jpg);
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+h3{
+  font-family: Verdana;
+}
+
+/* top level container */
+div#page {
+  width: 100%;
+}
+
+/* company logo appearing at top of each page */
+div#logo {
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* ===== main menu appearing under logo on each page */
+div#mainMenu {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  word-spacing: 100px;
+}
+
+ul#mainLinks li {
+  float: left;
+  width: 179px;
+  padding-bottom: 5px;
+  border-right: 1px solid #FFF;
+  background-color: #093;
+  text-align: center;
+}
+
+#mainMenu a:link, a:visited{
+  word-spacing: 0px;
+  color: white;
+}
+
+/* ===== content area for each page ===== */
+div#content {
+  clear: left;
+  width: 100%;
+}
+
+div#content p {
+  margin: 1em .2em .7em 0;
+  text-align: left;
+  font-size: 1em;
+}
+
+/* ===== only main page has text at left in content area ===== */
+div#textLeft {
+  float: left;
+  width: 65%;
+}
+
+/* ===== only main page has image at right in content area ===== */
+div#image {
+  float: left;
+  width: 35%;
+  text-align: center;
+}
+
+div#image img {
+  margin-top: 40px;
+}
+
+/* ===== several pages have submenus at left in content area ===== */
+div#subMenu {
+  float: left;
+  width: 180px;
+}
+
+ul#subLinks li {
+  width: 179px;
+  padding-bottom: 10px;
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  background-color: #a50744;
+  text-align: center;
+}
+
+ul#subLinks li a {
+  color: #FFF;
+  font-weight: bold;
+  font-size: .9em;
+  text-decoration: none;
+}
+
+/* ===== pages with submenus at the left have text at the right ===== */
+div#textRight {
+  float: left;
+  width: 715px;
+  margin-left: 5px;
+}
+
+div#textRight p {
+  margin: 1em .2em .7em 0;
+}
+
+/* ===== several pages have only text in the content area ===== */
+div#textOnly p {
+  margin: 2em .2em .7em 0;
+}
+
+div#textOnly ol {
+  margin: 50px 100px 20px;
+}
+
+div#textOnly ul {
+  margin: 0 50px;
+}
+
+/* ===== footer has both copyright notice and a short menu ===== */
+/* Note that some styling for the main menu and submenus appears here
+to avoid duplication, since certain styles are the same for all three
+kinds of menus.
+*/
+div#footer {
+  clear: left;
+  width: 100%;
+  height: 20px;
+}
+
+div#copyright {
+  float: left;
+  width: 539px;
+  height: 100%;
+  padding-top: 5px;
+  border-right: 1px solid #FFF;
+  background-color: #093;
+  color: #DDD;
+  text-align: center;
+  font-weight: bold;
+  font-size: .7em;
+}
+
+div#footerMenu {
+  float: left;
+  width: 360px;
+  height: 100%;
+}
+
+ul#mainLinks, ul#subLinks, ul#footerLinks {
+  height: 100%;
+  list-style-type: none;
+}
+
+ul#footerLinks li {
+  float: left;
+  width: 179px;
+  height: 100%;
+  padding-bottom: 5px;
+  border-right: 1px solid #FFF;
+  background-color: #093;
+  text-align: center;
+}
+
+ul#mainLinks li a, ul#footerLinks li a {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: .7em;
+}
+
+ul#mainLinks li a:hover, ul#subLinks li a:hover, ul#footerLinks li a:hover {
+  padding: 2px 1px;
+  background-color: #3F3;
+  color: #000;
+}
+
+/* === some pages with text at left or right of content area have headers === */
+div#textLeft h3, div#textRight h3 {
+  margin: 1em 0 .7em;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1em;
+}
