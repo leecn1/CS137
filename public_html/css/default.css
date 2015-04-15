@@ -23,15 +23,17 @@ div#page {
 
 /* company logo appearing at top of each page */
 div#logo {
-  text-align: center;
-  padding: 10px 0;
+  position: relative;
+  top: -10px;
+  right: -550px;
 }
 
 /* ===== main menu appearing under logo on each page */
 div#mainMenu {
   width: 100%;
   height: 20px;
-  text-align: center;
+  position: relative;
+  left: 410px;
   word-spacing: 100px;
 }
 
@@ -47,6 +49,18 @@ ul#mainLinks li {
 #mainMenu a:link, a:visited{
   word-spacing: 0px;
   color: white;
+}
+
+a.index {
+  margin-left: 45px;
+}
+
+a.buy {
+  margin-left: 20px;
+}
+
+a.support {
+  margin-left: -42px;
 }
 
 /* ===== content area for each page ===== */
@@ -75,7 +89,17 @@ div#image {
 }
 
 div#image img {
-  margin-top: 40px;
+  margin-top: 30px;
+  margin-left: 460px;
+}
+
+div#film {
+  position: absolute;
+}
+
+div#film img {
+  margin-top: -2px;
+  margin-left: 395px;
 }
 
 /* ===== several pages have submenus at left in content area ===== */
@@ -103,13 +127,15 @@ ul#subLinks li a {
 }
 
 /* ===== pages with submenus at the left have text at the right ===== */
-div#textRight {
-  float: left;
-  width: 715px;
-  margin-left: 5px;
+div#text {
+  float: right;
+  width: 480px;
+  position: relative;
+  top: 40px;
+  right: 150px;
 }
 
-div#textRight p {
+div#text p {
   margin: 1em .2em .7em 0;
 }
 
