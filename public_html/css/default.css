@@ -12,10 +12,6 @@ body{
   color: white;
 }
 
-h3{
-  font-family: Verdana;
-}
-
 /* top level container */
 div#page {
   width: 100%;
@@ -24,29 +20,20 @@ div#page {
 /* company logo appearing at top of each page */
 div#logo {
   position: relative;
-  top: -10px;
-  right: -550px;
+  right: -160px;
 }
 
 /* ===== main menu appearing under logo on each page */
 div#mainMenu {
   width: 100%;
+  top: 10px;
   height: 20px;
   position: relative;
-  left: 410px;
+  left: 14px;
   word-spacing: 100px;
 }
 
-ul#mainLinks li {
-  float: left;
-  width: 179px;
-  padding-bottom: 5px;
-  border-right: 1px solid #FFF;
-  background-color: #093;
-  text-align: center;
-}
-
-#mainMenu a:link, a:visited{
+div#mainMenu a:link, a:visited{
   word-spacing: 0px;
   color: white;
 }
@@ -75,12 +62,6 @@ div#content p {
   font-size: 1em;
 }
 
-/* ===== only main page has text at left in content area ===== */
-div#textLeft {
-  float: left;
-  width: 65%;
-}
-
 /* ===== only main page has image at right in content area ===== */
 div#image {
   float: left;
@@ -90,16 +71,16 @@ div#image {
 
 div#image img {
   margin-top: 30px;
-  margin-left: 460px;
+  margin-left: 650px;
 }
 
+/* ===== film for mainlinks ===== */
 div#film {
   position: absolute;
 }
 
 div#film img {
-  margin-top: -2px;
-  margin-left: 395px;
+  margin-top: 2px;
 }
 
 /* ===== several pages have submenus at left in content area ===== */
@@ -128,28 +109,19 @@ ul#subLinks li a {
 
 /* ===== pages with submenus at the left have text at the right ===== */
 div#text {
-  float: right;
-  width: 480px;
+  width: 600px;
   position: relative;
+  overflow: hidden;
   top: 40px;
-  right: 150px;
+  right: 400px;
 }
 
 div#text p {
   margin: 1em .2em .7em 0;
 }
 
-/* ===== several pages have only text in the content area ===== */
-div#textOnly p {
-  margin: 2em .2em .7em 0;
-}
-
-div#textOnly ol {
-  margin: 50px 100px 20px;
-}
-
-div#textOnly ul {
-  margin: 0 50px;
+div#text h3 {
+  font-family: Verdana;
 }
 
 /* ===== footer has both copyright notice and a short menu ===== */
@@ -208,12 +180,4 @@ ul#mainLinks li a:hover, ul#subLinks li a:hover, ul#footerLinks li a:hover {
   padding: 2px 1px;
   background-color: #3F3;
   color: #000;
-}
-
-/* === some pages with text at left or right of content area have headers === */
-div#textLeft h3, div#textRight h3 {
-  margin: 1em 0 .7em;
-  text-align: left;
-  font-weight: bold;
-  font-size: 1em;
 }
