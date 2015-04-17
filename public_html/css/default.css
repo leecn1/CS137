@@ -64,25 +64,25 @@ div#content p {
 
 /* ===== only main page has image at right in content area ===== */
 div#image {
-  float: left;
+  float: right;
   width: 35%;
-  text-align: center;
+  position: absolute;
 }
 
 div#image img {
   margin-top: 30px;
-  margin-left: 650px;
+  margin-left: 700px;
 }
 
 div#imageRight {
   float: left;
   width: 35%;
-  text-align: center;
+  text-align: absolute;
 }
 
 div#imageRight img {
   margin-top: 30px;
-  margin-left: 775px;
+  margin-left: 700px;
 }
 
 /* ===== film for mainlinks ===== */
@@ -123,15 +123,16 @@ ul#subLinks li a {
 
 /* ===== pages with submenus at the left have text at the right ===== */
 div#text {
+  float: left;
   width: 600px;
   position: relative;
   overflow: hidden;
-  top: 40px;
-  right: 400px;
+  margin-top: 40px;
+  left: 50px;
 }
 
 div#text p {
-  margin: 1em .2em .7em 0;
+
 }
 
 div#text h3 {
@@ -140,14 +141,14 @@ div#text h3 {
 
 div#textRight {
   width: 600px;
-  position: relative;
+  position: absolute;
   overflow: hidden;
-  top: 40px;
+  margin-top: 40px;
   right: 370px;
 }
 
 div#textRight p {
-  margin: 1em .2em .7em 0;
+
 }
 
 div#textRight h3 {
