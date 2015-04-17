@@ -20,7 +20,7 @@ div#page {
 /* company logo appearing at top of each page */
 div#logo {
   position: relative;
-  right: -160px;
+  right: -200px;
 }
 
 /* ===== main menu appearing under logo on each page */
@@ -29,7 +29,7 @@ div#mainMenu {
   top: 10px;
   height: 20px;
   position: relative;
-  left: 14px;
+  left: 65px;
   word-spacing: 100px;
 }
 
@@ -74,6 +74,17 @@ div#image img {
   margin-left: 650px;
 }
 
+div#imageRight {
+  float: left;
+  width: 35%;
+  text-align: center;
+}
+
+div#imageRight img {
+  margin-top: 30px;
+  margin-left: 775px;
+}
+
 /* ===== film for mainlinks ===== */
 div#film {
   position: absolute;
@@ -81,16 +92,19 @@ div#film {
 
 div#film img {
   margin-top: 2px;
+  margin-left: 50px;
 }
 
 /* ===== several pages have submenus at left in content area ===== */
 div#subMenu {
   float: left;
-  width: 180px;
+  width: 160px;
+  padding-top: 30px;
+  padding-left: 15px;
 }
 
 ul#subLinks li {
-  width: 179px;
+  width: 159px;
   padding-bottom: 10px;
   border-left: 1px solid #FFF;
   border-right: 1px solid #FFF;
@@ -121,6 +135,22 @@ div#text p {
 }
 
 div#text h3 {
+  font-family: Verdana;
+}
+
+div#textRight {
+  width: 600px;
+  position: relative;
+  overflow: hidden;
+  top: 40px;
+  right: 370px;
+}
+
+div#textRight p {
+  margin: 1em .2em .7em 0;
+}
+
+div#textRight h3 {
   font-family: Verdana;
 }
 
@@ -178,6 +208,6 @@ ul#mainLinks li a, ul#footerLinks li a {
 
 ul#mainLinks li a:hover, ul#subLinks li a:hover, ul#footerLinks li a:hover {
   padding: 2px 1px;
-  background-color: #3F3;
+  background-color: #ffd632;
   color: #000;
 }
