@@ -65,6 +65,27 @@ float: left;
 width: 65%;
 }
 
+/* ===== only feedback page has form ===== */
+div#feedback {
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+div#feedback table {
+  border-collapse: separate;
+  border-spacing: 0 .5em;
+}
+
+div#feedback td {
+  width: 130px;
+}
+
+div#feedback textarea, input {
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: medium;
+}
+
 /* ===== only main page has image at right in content area ===== */
 div#image {
 float: left;
