@@ -60,6 +60,7 @@ font-size: 1em;
 
 /* ===== only main page has text at left in content area ===== */
 div#textLeft {
+margin-top: 10px;
 float: left;
 width: 65%;
 }
@@ -110,8 +111,19 @@ margin: 1em .2em .7em 0;
 }
 
 /* ===== several pages have only text in the content area ===== */
+div#textOnly{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
 div#textOnly p {
-margin: 2em .2em .7em 0;
+margin-top:10px;
+margin-bottom:10px;
+margin-left:30px;
+}
+
+div#textOnly a{
+  color: #FFF;
 }
 
 div#textOnly ol {
