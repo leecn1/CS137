@@ -1,214 +1,175 @@
-/* default.css for the expanded Nature's Source web site */
+/* default.css */
 
 /* ===== global settings ===== */
+* {
+padding: 0;
+margin: 0;
+}
 
-body{
-  background-image: url(../img/2.jpg);
-  height: 100%;
+body {
+  width: 900px;
+  margin-top: 10px;
+  margin-left: 50px;
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: large;
+  background: url(../img/background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: initial;
   color: white;
 }
 
 /* top level container */
 div#page {
-  width: 100%;
+width: 100%;
 }
 
 /* company logo appearing at top of each page */
 div#logo {
-  position: relative;
-  right: -200px;
+padding: 10px 0;
+margin-left: 150px
 }
 
 /* ===== main menu appearing under logo on each page */
 div#mainMenu {
-  width: 100%;
-  top: 10px;
-  height: 20px;
-  position: relative;
-  left: 65px;
-  word-spacing: 100px;
+width: 843px;
+height: 60px;
+background: url(../img/film-strip.png);
 }
 
-div#mainMenu a:link, a:visited{
-  word-spacing: 0px;
-  color: white;
-}
-
-a.index {
-  margin-left: 45px;
-}
-
-a.buy {
-  margin-left: 20px;
-}
-
-a.support {
-  margin-left: -42px;
+ul#mainLinks li {
+float: left;
+font-size: 120%;
+margin-top: 15px;
+width: 140px;
+text-align: center;
 }
 
 /* ===== content area for each page ===== */
 div#content {
-  clear: left;
-  width: 100%;
+clear: left;
+width: 100%;
 }
 
 div#content p {
-  margin: 1em .2em .7em 0;
-  text-align: left;
-  font-size: 1em;
+margin: 1em .2em .7em 0;
+text-align: left;
+font-size: 1em;
+}
+
+/* ===== only main page has text at left in content area ===== */
+div#textLeft {
+float: left;
+width: 65%;
 }
 
 /* ===== only main page has image at right in content area ===== */
 div#image {
-  float: right;
-  width: 35%;
-  position: absolute;
+float: left;
+width: 35%;
+text-align: center;
 }
 
 div#image img {
-  margin-top: 30px;
-  margin-left: 700px;
-}
-
-div#imageRight {
-  float: left;
-  width: 35%;
-  text-align: absolute;
-}
-
-div#imageRight img {
-  margin-top: 30px;
-  margin-left: 700px;
-}
-
-/* ===== film for mainlinks ===== */
-div#film {
-  position: absolute;
-}
-
-div#film img {
-  margin-top: 2px;
-  margin-left: 50px;
+margin-top: 10px;
 }
 
 /* ===== several pages have submenus at left in content area ===== */
 div#subMenu {
-  float: left;
-  width: 160px;
-  padding-top: 30px;
-  padding-left: 15px;
+float: left;
+width: 150px;
+margin-top: 10px;
+margin-bottom: 10px;
 }
 
 ul#subLinks li {
-  width: 159px;
-  padding-bottom: 10px;
-  border-left: 1px solid #FFF;
-  border-right: 1px solid #FFF;
-  border-top: 1px solid #FFF;
-  border-bottom: 1px solid #FFF;
-  background-color: #a50744;
-  text-align: center;
+width: 140px;
+padding-bottom: 3px;
+border: 1px solid #000;
+background-color: #FFF;
+text-align: center;
 }
 
 ul#subLinks li a {
-  color: #FFF;
-  font-weight: bold;
-  font-size: .9em;
-  text-decoration: none;
+color: #000;
+font-weight: bold;
+font-size: .7em;
+text-decoration: none;
 }
 
 /* ===== pages with submenus at the left have text at the right ===== */
-div#text {
-  float: left;
-  width: 600px;
-  position: relative;
-  overflow: hidden;
-  margin-top: 40px;
-  left: 50px;
-}
-
-div#text p {
-
-}
-
-div#text h3 {
-  font-family: Verdana;
-}
-
 div#textRight {
-  width: 600px;
-  position: absolute;
-  overflow: hidden;
-  margin-top: 40px;
-  right: 370px;
+float: left;
+width: 700px;
+margin-left: 5px;
 }
 
 div#textRight p {
-
+margin: 1em .2em .7em 0;
 }
 
-div#textRight h3 {
-  font-family: Verdana;
+/* ===== several pages have only text in the content area ===== */
+div#textOnly p {
+margin: 2em .2em .7em 0;
+}
+
+div#textOnly ol {
+margin: 50px 100px 20px;
+}
+
+div#textOnly ul {
+margin: 0 50px;
 }
 
 /* ===== footer has both copyright notice and a short menu ===== */
 /* Note that some styling for the main menu and submenus appears here
-to avoid duplication, since certain styles are the same for all three
-kinds of menus.
+   to avoid duplication, since certain styles are the same for all three
+   kinds of menus.
 */
 div#footer {
-  clear: left;
-  width: 100%;
-  height: 20px;
+clear: left;
+width: 100%;
+height: 20px;
 }
 
 div#copyright {
-  float: left;
-  width: 539px;
-  height: 100%;
-  padding-top: 5px;
-  border-right: 1px solid #FFF;
-  background-color: #093;
-  color: #DDD;
-  text-align: center;
-  font-weight: bold;
-  font-size: .7em;
+float: left;
+width: 350px;
+height: 100%;
+padding-top: 5px;
+font-weight: bold;
+font-size: .7em;
 }
 
-div#footerMenu {
-  float: left;
-  width: 360px;
-  height: 100%;
-}
-
-ul#mainLinks, ul#subLinks, ul#footerLinks {
-  height: 100%;
-  list-style-type: none;
+ul#mainLinks, ul#subLinks{
+height: 100%;
+list-style-type: none;
 }
 
 ul#footerLinks li {
-  float: left;
-  width: 179px;
-  height: 100%;
-  padding-bottom: 5px;
-  border-right: 1px solid #FFF;
-  background-color: #093;
-  text-align: center;
+float: left;
+width: 139px;
+height: 100%;
+padding-bottom: 5px;
+text-align: center;
 }
 
 ul#mainLinks li a, ul#footerLinks li a {
-  color: #FFF;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: .7em;
+color: #FFF;
+text-decoration: none;
+font-weight: bold;
+font-size: .7em;
 }
 
 ul#mainLinks li a:hover, ul#subLinks li a:hover, ul#footerLinks li a:hover {
-  padding: 2px 1px;
-  background-color: #ffd632;
-  color: #000;
+color: #000;
+}
+
+/* === some pages with text at left or right of content area have headers === */
+div#textLeft h3, div#textRight h3 {
+margin: 1em 0 .7em;
+text-align: left;
+font-weight: bold;
+font-size: 1em;
 }
