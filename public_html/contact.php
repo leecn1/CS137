@@ -9,20 +9,8 @@
   </head>
   <body>
     <div id="page">
-      <div id="logo">
-        <img src="img/Mah logo.png" alt="WeSellDVDs Source Logo"
-          width="538px" height="173px" />
-      </div>
-      <div id="mainMenu">
-        <ul id="mainLinks">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="buy.html">Buy Now</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="support.html">Technical Support</a>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="sitemap.html">Site Map</a></li>
-        </ul>
-      </div>
+      <!--#include virtual="common/logo.php"-->
+      <!--#include virtual="common/mainMenu.php"-->
       <div id="textOnly">
       <h3>Do you have any questions for us? We would love to hear from you!</h3>
       <p>
@@ -42,11 +30,9 @@
       <h3>If you have time, please fill out a feedback form. It would help us
         make our e-store even better!
       </h3>
-      <p><a href="feedback.html">Click here for feedback form!</a></p>
+      <p><a href="feedback.php">Click here for feedback form!</a></p>
     </div>
-      <div id="footer">
-        <div id="copyright">WeSellDVDs &copy; 2015 Ryan Huey and Christine Lee</div>
-      </div>
+    <!--#include virtual="common/footer.php"-->
     </div>
   </body>
 </html>

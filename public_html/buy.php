@@ -9,27 +9,15 @@
   </head>
   <body>
     <div id="page">
-      <div id="logo">
-        <img src="img/Mah logo.png" alt="WeSellDVDs Source Logo"
-          width="538px" height="173px" />
-      </div>
-      <div id="mainMenu">
-        <ul id="mainLinks">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="buy.html">Buy Now</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="support.html">Technical Support</a>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="sitemap.html">Site Map</a></li>
-        </ul>
-      </div>
+      <!--#include virtual="common/logo.php"-->
+      <!--#include virtual="common/mainMenu.php"-->
       <div id="content">
         <div id="subMenu">
           <ul id="subLinks">
-            <li><a href="deals.html">Deals</a></li>
-            <li><a href="best sellers.html">Best Sellers</a></li>
-            <li><a href="new releases.html">New Releases</a></li>
-            <li><a href="coming soon.html">Coming Soon</a></li>
+            <li><a href="deals.php">Deals</a></li>
+            <li><a href="best sellers.php">Best Sellers</a></li>
+            <li><a href="new releases.php">New Releases</a></li>
+            <li><a href="coming soon.php">Coming Soon</a></li>
           </ul>
         </div>
         <div id="textRight">
@@ -40,9 +28,7 @@
           find new and old movies, with options in both DVD and Blu-ray form.</p>
         </div>
       </div>
-      <div id="footer">
-        <div id="copyright">WeSellDVDs &copy; 2015 Ryan Huey and Christine Lee</div>
-      </div>
+      <!--#include virtual="common/footer.php"-->
     </div>
   </body>
 </html>
