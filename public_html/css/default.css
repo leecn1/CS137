@@ -66,22 +66,22 @@ width: 65%;
 }
 
 /* ===== only feedback page has form ===== */
-div#feedback {
+div#feedback, div#cart {
   float: left;
   margin-top: 10px;
   margin-bottom: 10px
 }
 
-div#feedback table {
+div#feedback table, div#cart table {
   border-collapse: separate;
   border-spacing: 0 .5em;
 }
 
-div#feedback td {
-  width: 130px;
+div#feedback td, div#cart td {
+  width: 300px;
 }
 
-div#feedback textarea, input {
+div#feedback textarea, input, div#cart input{
   font-family: "Times New Roman", Georgia, Serif;
   font-size: medium;
 }
@@ -135,6 +135,7 @@ margin: 1em .2em .7em 0;
 div#textOnly{
   margin-top:10px;
   margin-bottom:10px;
+  width: 850px;
 }
 
 div#textOnly p {
@@ -161,7 +162,7 @@ margin: 0 50px;
    kinds of menus.
 */
 div#footer {
-clear: left;
+clear: right;
 width: 100%;
 height: 20px;
 }
@@ -180,22 +181,23 @@ height: 100%;
 list-style-type: none;
 }
 
-ul#footerLinks li {
-float: left;
+div#footerLinks {
+float: right;
+margin-right: 30px;
 width: 139px;
 height: 100%;
 padding-bottom: 5px;
 text-align: center;
 }
 
-ul#mainLinks li a, ul#footerLinks li a {
+ul#mainLinks li a, div#footerLinks a {
 color: #FFF;
 text-decoration: none;
 font-weight: bold;
 font-size: .7em;
 }
 
-ul#mainLinks li a:hover, ul#subLinks li a:hover, ul#footerLinks li a:hover {
+ul#mainLinks li a:hover, ul#subLinks li a:hover, div#footerLinks a:hover {
 color: #000;
 }
 

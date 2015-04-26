@@ -18,6 +18,7 @@
             <li><a href="best sellers.php">Best Sellers</a></li>
             <li><a href="new releases.php">New Releases</a></li>
             <li><a href="coming soon.php">Coming Soon</a></li>
+            <li><a href="rare.php">Rare Finds</a></li>
           </ul>
         </div>
         <div id="textRight">

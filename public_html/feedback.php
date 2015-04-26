@@ -35,12 +35,37 @@
                 placeholder="Enter email address here..." /></td>
             </tr>
             <tr valign="top">
+              <td></td>
+              <td><input type="checkbox" name="yndvd" value="yDVD" />
+                I bought a DVD from this site.</td>
+            </tr>
+            <tr valign="top">
+              <td>Satisfaction Level for DVD purchased:</td>
+              <td><input type="radio" name="satisfy" value="1" />1<br />
+                <input type="radio" name="satisfy" value="2" />2<br />
+              <input type="radio" name="satisfy" value="3" />3<br />
+              <input type="radio" name="satisfy" value="4" />4</td>
+            </tr>
+            <tr valign="top">
+              <td></td>
+              <td><input type="checkbox" name="ynchatroom" value="yChatroom" />
+                I used the technical chatroom on this site.</td>
+            </tr>
+            <tr valign="top">
+              <td>Satisfaction Level for Chatroom:</td>
+              <td><input type="radio" name="satisfy1" value="1" />1<br />
+                <input type="radio" name="satisfy1" value="2" />2<br />
+              <input type="radio" name="satisfy1" value="3" />3<br />
+              <input type="radio" name="satisfy1" value="4" />4</td>
+            </tr>
+            <tr valign="top">
               <td>Comment:</td>
               <td><textarea rows="5" cols="40" placeholder="Enter comments here..."></textarea></td>
             </tr>
             <tr valign="top">
               <td></td>
-              <td><input type="submit" name="submit" value="Submit" /></td>
+              <td><input type="submit" name="submit" value="Submit" />
+                <input type="reset" name="reset" value="Reset" /></td>
             </tr>
           </table>
         </form>
