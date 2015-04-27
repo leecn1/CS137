@@ -65,25 +65,50 @@ float: left;
 width: 65%;
 }
 
-/* ===== only feedback page has form ===== */
-div#feedback, div#cart {
+/* ===== feedback and cart page has form ===== */
+div#feedback {
   float: left;
   margin-top: 10px;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
-div#feedback table, div#cart table {
+div#feedback table {
   border-collapse: separate;
   border-spacing: 0 .5em;
 }
 
-div#feedback td, div#cart td {
+div#feedback td {
   width: 300px;
 }
 
-div#feedback textarea, input, div#cart input{
+div#feedback textarea, input {
   font-family: "Times New Roman", Georgia, Serif;
   font-size: medium;
+}
+
+div#cart {
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div#cart legend {
+  text-align: center;
+}
+
+div#cart table {
+  border-collapse: separate;
+  border-spacing: 1em 1em;
+}
+
+div#cart fieldset{
+  width: 843px;
+  margin-bottom: 10px;
+}
+
+div#cart td {
+  width: 400px;
+  padding-left: 5px;
 }
 
 /* ===== only main page has image at right in content area ===== */

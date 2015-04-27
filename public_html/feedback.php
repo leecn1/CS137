@@ -5,6 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <script type="text/javascript" src="scripts/feedback.js"></script>
     <title>Feeback Form!</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
       <!--#include virtual="common/logo.php"-->
       <!--#include virtual="common/mainMenu.php"-->
       <div id="feedback">
-        <form>
+        <form id="feedbackForm" action="" onsubmit="validateFeedbackForm()">
           <table summary="Feedback form for WeSellDVDs">
             <tr valign="top">
               <td>First Name:</td>
