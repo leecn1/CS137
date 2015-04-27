@@ -1,4 +1,6 @@
-//feedback3.js
+//cart.js
+
+
 
 function validateInput()
 {
@@ -7,8 +9,12 @@ function validateInput()
     var qDeal = cartFormObj.qDeal.value;
     var rareMovie = cartFormObj.rare.value;
     var qRare = cartFormObj.qRare.value;
-    var newMovie = cartFormObj.new.value;
+    var newHero = cartFormObj.Hero.checked;
+    var newInter = cartFormObj.Inter.checked;
+    var newWoods = cartFormObj.Woods.checked;
     var qNew = cartFormObj.qNew.value;
+    var qNew1 = cartFormObj.qNew1.value;
+    var qNew2 = cartFormObj.qNew2.value;
     var exempt = cartFormObj.tax.checked;
     var everythingOK = true;
 
@@ -26,7 +32,19 @@ function validateInput()
 
     if(!validateQ(qNew))
     {
-      alert("Error: Number of units for New Releases is not a valid number.");
+      alert("Error: Number of units for New Releases-Big Hero 6 is not a valid number.");
+      everythingOK = false;
+    }
+
+    if(!validateQ(qNew2))
+    {
+      alert("Error: Number of units for New Releases-Interstellar is not a valid number.");
+      everythingOK = false;
+    }
+
+    if(!validateQ(qNew2))
+    {
+      alert("Error: Number of units for New Releases-Into the Woods is not a valid number.");
       everythingOK = false;
     }
 
@@ -42,11 +60,20 @@ function validateInput()
       {
         msg += "\nTitle: " + rareMovie + "\nQuantity: " + qRare + "\nPrice: " + (qRare*14.99).toFixed(2) + "\n";
       }
-      if(qNew != 0)
+      if(qNew != 0 && newHero)
       {
-        msg += "\nTitle: " + newMovie + "\nQuantity: " + qNew + "\nPrice: " + (qNew*11.99).toFixed(2) + "\n";
+        msg += "\nTitle: Big Hero 6" + "\nQuantity: " + qNew + "\nPrice: " + (qNew*11.99).toFixed(2) + "\n";
       }
-      var subTotal = calculateSubTotal(qDeal, qRare, qNew);
+      if(qNew1 != 0 && newInter)
+      {
+        msg += "\nTitle: Interstellar" + "\nQuantity: " + qNew1 + "\nPrice: " + (qNew1*11.99).toFixed(2) + "\n";
+      }
+      if(qNew2 != 0 && newWoods)
+      {
+        msg += "\nTitle: Into the Woods" + "\nQuantity: " + qNew2 + "\nPrice: " + (qNew2*11.99).toFixed(2) + "\n";
+      }
+
+      var subTotal = calculateSubTotal(qDeal, qRare, qNew, qNew1, qNew2);
       msg += "\nRecepit: \nSubtotal: " + subTotal;
       if(exempt)
       {
@@ -66,9 +93,9 @@ function validateInput()
 
 }
 
-function calculateSubTotal(qDeal, qRare, qNew)
+function calculateSubTotal(qDeal, qRare, qNew, qNew1, qNew2)
 {
-  return (qDeal * 10.99) + (qRare * 14.99) + (qNew * 11.99);
+  return (qDeal * 10.99) + (qRare * 14.99) + (qNew * 11.99) + (qNew1 * 11.99) + (qNew2 * 11.99);
 }
 
 function validateTax(cartFormObj)
