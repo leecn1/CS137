@@ -1,7 +1,5 @@
 //cart.js
 
-
-
 function validateInput()
 {
     var cartFormObj = document.getElementById("cartForm");

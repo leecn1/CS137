@@ -1,0 +1,101 @@
+/* opening.css */
+
+/* ===== global settings ===== */
+* {
+padding: 0;
+margin: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: large;
+  background: url(../img/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: initial;
+  color: white;
+}
+
+div#overlay {
+  margin: 100px 310px;
+  height: 500px;
+  background:rgba(0,0,0,0.7);
+}
+
+img#top {
+  width: 730px;
+  height: 100px;
+  margin-left: 0px;
+}
+
+div#greeting {
+  padding: 20px;
+}
+
+div#greeting p{
+  text-align: center;
+  font-size: 30pt;
+}
+
+div#hour, div#minute, div#second {
+  float: left;
+}
+
+div#hour p, div#minute p, div#second p {
+  font-size: 20pt;
+  text-align: center;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  padding: 10px;
+  width: 219px;
+}
+
+div#minute p {
+  border-right: 5px solid white;
+  border-left: 5px solid white;
+}
+
+div#scene {
+  margin-top: 100px;
+  text-align: center;
+}
+
+div#scene p {
+  font-size: 30pt;
+  padding: 30px;
+  border-bottom: 5px solid white;
+}
+
+div#scene button {
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #282a2b);
+  background-image: -moz-linear-gradient(top, #000000, #282a2b);
+  background-image: -ms-linear-gradient(top, #000000, #282a2b);
+  background-image: -o-linear-gradient(top, #000000, #282a2b);
+  background-image: linear-gradient(to bottom, #000000, #282a2b);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: "Times New Roman", Georgia, Serif;
+  color: #ffffff;
+  font-size: 30px;
+  padding: 10px 40px 10px 40px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+div#scene button:hover {
+  background: #282a2b;
+  background-image: -webkit-linear-gradient(top, #282a2b, #000000);
+  background-image: -moz-linear-gradient(top, #282a2b, #000000);
+  background-image: -ms-linear-gradient(top, #282a2b, #000000);
+  background-image: -o-linear-gradient(top, #282a2b, #000000);
+  background-image: linear-gradient(to bottom, #282a2b, #000000);
+  text-decoration: none;
+}
+
+div#scene button:focus {
+  outline: none;
+}
