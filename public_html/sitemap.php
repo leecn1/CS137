@@ -32,7 +32,8 @@
                     </ul>
                   </li>
                   <li><a href="support.php">Technical Support</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="contact.php">Contact Us</a></li>
+                  <li><a href="cart.php">Your Cart</a></li>
                 </ol>
         </div>
       </div>

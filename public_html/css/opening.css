@@ -18,17 +18,24 @@ body {
   color: white;
 }
 
+/* ===== transparent overlay ===== */
+
 div#overlay {
   margin: 100px 310px;
+  float: left;
   height: 500px;
   background:rgba(0,0,0,0.7);
 }
+
+/* ===== image on top of overlay ===== */
 
 img#top {
   width: 730px;
   height: 100px;
   margin-left: 0px;
 }
+
+/* ===== content of on overlay ===== */
 
 div#greeting {
   padding: 20px;

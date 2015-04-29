@@ -46,6 +46,18 @@ function validateInput()
       everythingOK = false;
     }
 
+    if((newHero && qNew == 0) || (newInter && qNew1 == 0) || (newWoods && qNew2 == 0))
+    {
+      alert("Error: New Release movie is checked, but quantity is still equal to 0.");
+      everythingOK = false;
+    }
+
+    if((!newHero && qNew > 0) || (!newInter && qNew1 > 0) || (!newWoods && qNew2 > 0))
+    {
+      alert("Error: Quantities for New Releases is greater than 0, but corresponding movie is not checked.");
+      everythingOK = false;
+    }
+
     if(everythingOK)
     {
       var msg = "You bought:\n";
@@ -72,7 +84,8 @@ function validateInput()
       }
 
       var subTotal = calculateSubTotal(qDeal, qRare, qNew, qNew1, qNew2);
-      msg += "\nRecepit: \nSubtotal: " + subTotal;
+      subTotal = subTotal.toFixed(2);
+      msg += "\nReceipt: \nSubtotal: " + subTotal;
       if(exempt)
       {
         msg += "\nSales Tax %: 0";
@@ -84,7 +97,8 @@ function validateInput()
         msg += "\nSales Tax %: 8.25";
         var totalTax = subTotal * 0.0825;
         msg += "\nTotal Tax: " + totalTax.toFixed(2);
-        msg += "\nTotal Price: " + (subTotal + totalTax).toFixed(2);
+        var totalPrice = +subTotal + +totalTax;
+        msg += "\nTotal Price: " + totalPrice.toFixed(2);
       }
       alert(msg);
     }
