@@ -6,6 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <script type="text/javascript" src="scripts/cart.js"></script>
+    <script type="text/javascript" src="scripts/menu.js"></script>
     <title>Your Cart!</title>
   </head>
   <body>

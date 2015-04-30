@@ -6,22 +6,14 @@
     <title>Buy DVDs Now!</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <script type="text/javascript" src="scripts/menu.js"></script>
   </head>
   <body>
     <div id="page">
       <!--#include virtual="common/logo.php"-->
       <!--#include virtual="common/mainMenu.php"-->
       <div id="content">
-        <div id="subMenu">
-          <ul id="subLinks">
-            <li><a href="deals.php">Deals</a></li>
-            <li><a href="best sellers.php">Best Sellers</a></li>
-            <li><a href="new releases.php">New Releases</a></li>
-            <li><a href="coming soon.php">Coming Soon</a></li>
-            <li><a href="rare.php">Rare Finds</a></li>
-          </ul>
-        </div>
-        <div id="textRight">
+        <div id="textOnly">
           <p>If you're looking for a wide selection of movies to choose from,
           you've come to the right place! You will soon be able
           to purchase any of our DVDs online and have them shipped to

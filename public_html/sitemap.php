@@ -6,6 +6,7 @@
     <title>WeSellDVDs - Site Map</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <script type="text/javascript" src="scripts/menu.js"></script>
   </head>
   <body>
     <div id="page">

@@ -6,21 +6,14 @@
     <title>Our Mission</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <script type="text/javascript" src="scripts/menu.js"></script>
   </head>
   <body>
     <div id="page">
       <!--#include virtual="common/logo.php"-->
       <!--#include virtual="common/mainMenu.php"-->
       <div id="content">
-        <div id="subMenu">
-          <ul id="subLinks">
-            <li><a href="mission.php">Our Mission</a></li>
-            <li><a href="location.php">Find A Location</a></li>
-            <li><a href="contact.php">Contact Us</a></li>
-            <li><a href="career.php">Careers</a></li>
-          </ul>
-        </div>
-        <div id="textRight">
+        <div id="textOnly">
           <p>Our mission at WeSellDVDs is to provide customers with the best
           shopping experience. We understand that each and every individual has
           their own tastes and interests when it comes to movies. Therefore, we
