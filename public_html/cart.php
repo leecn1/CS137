@@ -51,8 +51,8 @@
                   <input type="checkbox" name="Woods" value="Into the Woods" />Into the Woods
                 </td>
                 <td>Price per Unit: $11.99 + tax</td>
-                <td>Units: <input type="text" name="qNew" size=5 value = "0"/>
-                    Units: <input type="text" name="qNew1" size=5 value = "0"/>
+                <td>Units: <input type="text" name="qNew" size=5 value = "0"/><br />
+                    Units: <input type="text" name="qNew1" size=5 value = "0"/><br />
                     Units: <input type="text" name="qNew2" size=5 value = "0"/>
                 </td>
               </tr>
