@@ -14,7 +14,7 @@
       <!--#include virtual="common/logo.php"-->
       <!--#include virtual="common/mainMenu.php"-->
       <div id="cart">
-        <form id="cartForm" action="" onsubmit="validateInput()">
+        <form action="sendMailForCart.php" method="post" id="cartForm" onsubmit="validateInput()">
           <fieldset>
             <legend>Your Shopping Cart</legend>
             <table summary="Customer's shopping cart">
@@ -59,10 +59,15 @@
               <tr>
                 <td colspan="2"><input type="checkbox" name="tax" value="exempt" /> I have tax-exempt status.</td>
               </tr>
+              <tr valign="top">
+                <td>Email Address:</td>
+                <td><input type="text" name="email" size="30"
+                  placeholder="Enter email address here..." /></td>
+              </tr>
             </table>
           </fieldset>
           <input type="submit" name="submit" value="Submit" />
-          <input type="reset" name="reset" value="Reset" />
+          <!-- <input type="reset" name="reset" value="Reset" /> -->
         </form>
       </div>
       <!--#include virtual="common/footer.php"-->

@@ -14,7 +14,7 @@
       <!--#include virtual="common/logo.php"-->
       <!--#include virtual="common/mainMenu.php"-->
       <div id="feedback">
-        <form action="sendMail.php" method="post" id="feedbackForm" onsubmit="validateFeedbackForm()">
+        <form action="sendMailForFeedback.php" method="post" id="feedbackForm" onsubmit="validateFeedbackForm()">
           <table summary="Feedback form for WeSellDVDs">
             <tr valign="top">
               <td>First Name:</td>

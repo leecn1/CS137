@@ -15,6 +15,7 @@ function validateInput()
     var qNew2 = cartFormObj.qNew2.value;
     var exempt = cartFormObj.tax.checked;
     var everythingOK = true;
+    var email = cartFormObj.email.value;
 
     if(!validateQ(qDeal))
     {
@@ -55,6 +56,12 @@ function validateInput()
     if((!newHero && qNew > 0) || (!newInter && qNew1 > 0) || (!newWoods && qNew2 > 0))
     {
       alert("Error: Quantities for New Releases is greater than 0, but corresponding movie is not checked.");
+      everythingOK = false;
+    }
+
+    if (!validateEmail(email))
+    {
+      alert("Error: Invalid e-mail address.");
       everythingOK = false;
     }
 
@@ -122,4 +129,13 @@ function validateTax(cartFormObj)
 function validateQ(q)
 {
   return q >>> 0 === parseFloat(q);
+}
+
+function validateEmail(address)
+{
+    var p = address.search(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})$/);
+    if (p == 0)
+        return true;
+    else
+        return false;
 }
