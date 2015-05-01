@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <script type="text/javascript" src="scripts/feedback.js"></script>
     <script type="text/javascript" src="scripts/menu.js"></script>
-    <title>Feeback Form!</title>
+    <title>Feedback Form!</title>
   </head>
   <body>
     <div id="page">

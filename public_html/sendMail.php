@@ -11,5 +11,11 @@ $mailContent = "Thank you for submitting feedback " . $firstName . " " . $lastNa
 //send mail
 mail($email, $emailSubject, $mailContent);
 mail("ryanhuey10@gmail.com", $firstName . " " . $lastName . " submitted feedback", $comment);
+
+$file = "data/feedback.txt";
+$contents = file_get_contents($file);
+$contents .= "User: " . $email . "\nWrote: " . $comment . "\n";
+file_put_contents("data/feedback.txt", $contents);
+
 header('Location: home.php');
 ?>
