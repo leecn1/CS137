@@ -14,7 +14,7 @@
       <!--#include virtual="common/logo.php"-->
       <!--#include virtual="common/mainMenu.php"-->
       <div id="feedback">
-        <form id="feedbackForm" action="" onsubmit="validateFeedbackForm()">
+        <form action="sendMail.php" method="post" id="feedbackForm" onsubmit="validateFeedbackForm()">
           <table summary="Feedback form for WeSellDVDs">
             <tr valign="top">
               <td>First Name:</td>
@@ -62,12 +62,12 @@
             </tr>
             <tr valign="top">
               <td>Comment:</td>
-              <td><textarea rows="5" cols="40" placeholder="Enter comments here..."></textarea></td>
+              <td><textarea name="comment" rows="5" cols="40" placeholder="Enter comments here..."></textarea></td>
             </tr>
             <tr valign="top">
               <td></td>
-              <td><input type="submit" name="submit" value="Submit" />
-                <input type="reset" name="reset" value="Reset" /></td>
+              <td><input type="submit" name="submit" value="Submit" /></td>
+                <!-- <input type="reset" name="reset" value="Reset" /></td> -->
             </tr>
           </table>
         </form>
