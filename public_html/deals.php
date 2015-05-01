@@ -1,7 +1,7 @@
 <!-- support.html -->
 <html>
   <head>
-    <title> Talk to Customer Service representative LIVE! </title>
+    <title> VERY GOOD DEALS! </title>
   </head>
   <body>
     <h1> Coming soon! </h1>

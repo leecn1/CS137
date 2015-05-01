@@ -15,7 +15,10 @@
       <!--#include virtual="common/mainMenu.php"-->
       <div id="content">
         <div id="textLeft">
-          <h2>Welcome to WeSellDVDs - They're cheap!</h2>
+          <h3>Welcome to WeSellDVDs <?php echo $_SERVER['REMOTE_ADDR']?> - They're cheap!</h3>
+          <?php date_default_timezone_set('America/Irvine');
+                echo "Today is " . date("m/d/Y") . ", and the time is " .
+                date("h:i:s A", time()) . " in PST.<br />";?>
           <p>Founded in 1995, WeSellDVDs was created to bring happiness to all
             movie lovers! We are one of the original companies to start selling
             DVDs, switching from VHS.
