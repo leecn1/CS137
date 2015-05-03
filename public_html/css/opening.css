@@ -21,18 +21,24 @@ body {
 /* ===== transparent overlay ===== */
 
 div#overlay {
-  margin: 100px 310px;
+  margin: 180px 310px;
   float: left;
-  height: 500px;
+  height: 450px;
   background:rgba(0,0,0,0.7);
+  position: absolute;
 }
 
 /* ===== image on top of overlay ===== */
 
 img#top {
-  width: 730px;
-  height: 100px;
-  margin-left: 0px;
+  margin-left: 285px;
+  margin-top: 30px;
+  transform:rotate(-25deg);
+-ms-transform:rotate(-25deg); /* Internet Explorer */
+-moz-transform:rotate(-25deg); /* Firefox */
+-webkit-transform:rotate(-25deg); /* Safari and Chrome */
+-o-transform:rotate(-25deg); /* Opera */
+  position: absolute;
 }
 
 /* ===== content of on overlay ===== */

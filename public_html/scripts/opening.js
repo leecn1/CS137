@@ -42,3 +42,20 @@ function homePage()
 {
   location.href = "home.php";
 }
+
+var degree = -25;
+var marginT = 30;
+var marginL = 285;
+
+function closeSlate() {
+  var top = document.getElementById("top");
+  degree += 0.5;
+  marginT += 2;
+  marginL += 0.5;
+  if(degree <= 0)
+  {
+    top.style.webkitTransform = "rotate(" + degree + "deg)";
+    top.style.marginTop = marginT + "px";
+    top.style.marginLeft = marginL + "px";
+  }
+}

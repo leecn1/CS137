@@ -10,6 +10,6 @@ $mailContent = "Thank you for submitting feedback " . $firstName . " " . $lastNa
 
 //send mail
 mail($email, $emailSubject, $mailContent);
-mail("ryanhuey10@gmail.com", $firstName . " " . $lastName . " submitted feedback", $comment);
+mail("goodbyeturtle@live.com", $firstName . " " . $lastName . " submitted feedback", $comment);
 header('Location: home.php');
 ?>

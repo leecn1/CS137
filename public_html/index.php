@@ -8,9 +8,10 @@
     <link rel="stylesheet" type="text/css" href="css/opening.css" />
     <script type="text/javascript" src="scripts/opening.js"></script>
   </head>
-  <body onload ="displayTime(); setInterval('displayTime()',1000)">
+  <body onload ="displayTime(); setInterval('displayTime()',1000); closeSlate(); setInterval('closeSlate()',30)">
+    <img id="top" src="img/Film-Slate-top.jpg" alt="top" />
     <div id="overlay">
-      <img id="top" src="img/Film-Slate.jpg" alt="top border" />
+      <img id="bottom" src="img/Film-Slate-bottom.jpg" alt="bottom" />
       <div id="greeting">
       </div>
       <div id="hour">
