@@ -7,14 +7,14 @@
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <script type="text/javascript" src="scripts/feedback.js"></script>
     <script type="text/javascript" src="scripts/menu.js"></script>
-    <title>Feeback Form!</title>
+    <title>Feedback Form!</title>
   </head>
   <body>
     <div id="page">
       <!--#include virtual="common/logo.php"-->
       <!--#include virtual="common/mainMenu.php"-->
       <div id="feedback">
-        <form action="sendMail.php" method="post" id="feedbackForm" onsubmit="validateFeedbackForm()">
+        <form action="sendMailForFeedback.php" method="post" id="feedbackForm" onsubmit="validateFeedbackForm()">
           <table summary="Feedback form for WeSellDVDs">
             <tr valign="top">
               <td>First Name:</td>
