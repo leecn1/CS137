@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!-- career.html -->
+<!-- career.php -->
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>Buy DVDs Now!</title>
@@ -10,8 +10,10 @@
   </head>
   <body>
     <div id="page">
-      <!--#include virtual="common/logo.php"-->
-      <!--#include virtual="common/mainMenu.php"-->
+      <?php
+        include("common/logo.php");
+        include("common/mainMenu.php");
+      ?>
       <div id="content">
         <div id="textOnly">
           <p>Looking for a fun and easy job? Well you came to the right place!
@@ -22,7 +24,9 @@
             hearing from you!</p>
         </div>
       </div>
-      <!--#include virtual="common/footer.php"-->
+      <?php
+        include("common/footer.php");
+      ?>
     </div>
   </body>
 </html>

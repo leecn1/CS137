@@ -1,4 +1,4 @@
-<!-- contact.html -->
+<!-- contact.php -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -10,8 +10,10 @@
   </head>
   <body>
     <div id="page">
-      <!--#include virtual="common/logo.php"-->
-      <!--#include virtual="common/mainMenu.php"-->
+      <?php
+        include("common/logo.php");
+        include("common/mainMenu.php");
+      ?>
       <div id="textOnly">
       <h3>Do you have any questions for us? We would love to hear from you!</h3>
       <p>
@@ -33,7 +35,9 @@
       </h3>
       <p><a href="feedback.php">Click here for feedback form!</a></p>
     </div>
-    <!--#include virtual="common/footer.php"-->
+    <?php
+      include("common/footer.php");
+    ?>
     </div>
   </body>
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!-- index.html -->
+<!-- index.php -->
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>WeSellDVDs - DVDs Galore</title>
@@ -11,8 +11,10 @@
   </head>
   <body onload="startRotation()">
     <div id="page">
-      <!--#include virtual="common/logo.php"-->
-      <!--#include virtual="common/mainMenu.php"-->
+      <?php
+        include("common/logo.php");
+        include("common/mainMenu.php");
+      ?>
       <div id="content">
         <div id="textLeft">
           <h3>Welcome to WeSellDVDs <?php echo $_SERVER['REMOTE_ADDR']?> - They're cheap!</h3>
@@ -32,7 +34,9 @@
           <img id="popular" src="" alt="Popular DVDs" width="105" height="148" />
         </div>
       </div>
-      <!--#include virtual="common/footer.php"-->
+      <?php
+        include("common/footer.php");
+      ?>
     </div>
   </body>
 </html>

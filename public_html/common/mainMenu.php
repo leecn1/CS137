@@ -6,10 +6,9 @@
       <a href="buy.php" onmouseover="show('l2')">Buy Now</a>
       <div id="l2" onmouseover="show('l2')">
         <a href="deals.php">Deals</a>
-        <a href="best sellers.php">Best Sellers</a>
         <a href="new releases.php">New Releases</a>
-        <a href="coming soon.php">Coming Soon</a>
         <a href="rare.php">Rare Finds</a>
+        <a href="coming soon.php">Coming Soon</a>
       </div>
     </li>
     <li>

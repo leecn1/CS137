@@ -1,4 +1,4 @@
-<!-- cart.html -->
+<!-- cart.php -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -11,8 +11,10 @@
   </head>
   <body>
     <div id="page">
-      <!--#include virtual="common/logo.php"-->
-      <!--#include virtual="common/mainMenu.php"-->
+      <?php
+        include("common/logo.php");
+        include("common/mainMenu.php");
+      ?>
       <div id="cart">
         <form action="sendMailForCart.php" method="post" id="cartForm" onsubmit="validateInput()">
           <fieldset>
@@ -67,10 +69,12 @@
             </table>
           </fieldset>
           <input type="submit" name="submit" value="Submit" />
-          <!-- <input type="reset" name="reset" value="Reset" /> -->
+          <input type="reset" name="reset" value="Reset" />
         </form>
       </div>
-      <!--#include virtual="common/footer.php"-->
+      <?php
+        include("common/footer.php");
+      ?>
     </div>
   </body>
 </html>

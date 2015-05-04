@@ -54,7 +54,7 @@ if($email != "")
   }
   $emailSubject = "Thank you for your purchase.";
   mail($email, $emailSubject, $msg);
-  mail("ryanhuey10@gmail.com", $email . " bought DVDs", $msg);
+  mail("goodbyeturtle@live.com", $email . " bought DVDs", $msg);
 
   $file = "data/bought.txt";
   $contents = file_get_contents($file);

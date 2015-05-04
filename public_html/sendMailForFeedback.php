@@ -12,7 +12,7 @@ if($firstName != "" && $lastName != "" && $email != "" && $comment != "")
   
   //send mail
   mail($email, $emailSubject, $mailContent);
-  mail("ryanhuey10@gmail.com", $firstName . " " . $lastName . " submitted feedback", $comment);
+  mail("goodbyeturtle@.live.com", $firstName . " " . $lastName . " submitted feedback", $comment);
 
   $file = "data/feedback.txt";
   $contents = file_get_contents($file);

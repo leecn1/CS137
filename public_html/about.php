@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!-- about.html -->
+<!-- about.php -->
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>About Us</title>
@@ -10,8 +10,10 @@
   </head>
   <body>
     <div id="page">
-      <!--#include virtual="common/logo.php"-->
-      <!--#include virtual="common/mainMenu.php"-->
+      <?php
+        include("common/logo.php");
+        include("common/mainMenu.php");
+      ?>
       <div id="content">
         <div id="textOnly">
           <p>Founded in 1995, WeSellDVDs is one of the oldest and most reliable

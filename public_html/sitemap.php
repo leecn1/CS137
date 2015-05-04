@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!-- sitemap.html -->
+<!-- sitemap.php -->
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>WeSellDVDs - Site Map</title>
@@ -10,15 +10,16 @@
   </head>
   <body>
     <div id="page">
-      <!--#include virtual="common/logo.php"-->
-      <!--#include virtual="common/mainMenu.php"-->
+      <?php
+        include("common/logo.php");
+        include("common/mainMenu.php");
+      ?>
       <div id="content">
         <div id="textOnly">
                 <ol>
-                  <li><a href="buy.html">Buy Now</a>
+                  <li><a href="buy.php">Buy Now</a>
                     <ul>
                       <li><a href="deals.php">Deals</a></li>
-                      <li><a href="best sellers.php">Best Sellers</a></li>
                       <li><a href="new releases.php">New Releases</a></li>
                       <li><a href="coming soon.php">Coming Soon</a></li>
                     </ul>
@@ -38,7 +39,9 @@
                 </ol>
         </div>
       </div>
-      <!--#include virtual="common/footer.php"-->
+      <?php
+        include("common/footer.php");
+      ?>
     </div>
   </body>
 </html>
